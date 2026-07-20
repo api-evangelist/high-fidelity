@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/highfidelity/hifi-spatial-audio-js#readme
+docs: https://www.highfidelity.com/api/guides/misc/getAJWT
+summary:
+  types: [jwt]
+  transport: connection-token
+  credential_source: High Fidelity Developer Account (account.highfidelity.com)
+schemes:
+  - name: SpatialAudioJWT
+    type: jwt
+    scheme: bearer
+    description: >-
+      Clients connect to the High Fidelity Spatial Audio API server by supplying
+      a JSON Web Token (JWT) to HiFiCommunicator.connectToHiFiAudioAPIServer().
+      The JWT is signed with the developer's App Secret and encodes the App ID
+      and the target Space (audio environment). Credentials (App ID, App Secret,
+      Space) are issued from a free High Fidelity Developer Account.
+    required_credentials:
+      - App ID
+      - App Secret
+      - Space (name/id)
+    signup: https://account.highfidelity.com
+    sources:
+      - github.com/highfidelity/hifi-spatial-audio-js (README)
+notes: >-
+  Derived from the published SDK README and the getAJWT guide rather than an
+  OpenAPI securityScheme (no OpenAPI is published). The hosted service that
+  validated these JWTs has since been discontinued; the auth model is recorded
+  as documented.
