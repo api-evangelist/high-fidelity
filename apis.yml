@@ -1,7 +1,17 @@
 aid: high-fidelity
 name: High Fidelity
-description: 'High Fidelity is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  High Fidelity provides live spatial audio technology for apps and games. Its
+  Spatial Audio Client Library (hifi-spatial-audio, MIT) lets developers embed
+  realistic positional voice — 3D azimuth/distance transforms, nearfield
+  "whisper" audio, noise reduction, and many simultaneous speakers over the Opus
+  codec — into web and native applications, and previously connected them to a
+  hosted Spatial Audio API server via signed connection JWTs. Apps including
+  Clubhouse, Hubbub, Breakroom, and Soundstage used the technology. The hosted
+  API service has since been discontinued; the SDK remains open source, and the
+  company's active product is Quad, a spatial social platform that recreates
+  physical meeting spaces. High Fidelity was founded by Philip Rosedale and is a
+  portfolio company of GV.
 url: https://raw.githubusercontent.com/api-evangelist/high-fidelity/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,18 +19,93 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-lifecycle: hosted-api-discontinued
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://raw.githubusercontent.com/highfidelity/hifi-spatial-audio-js/main/utilities/spatialAudioLogo.svg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
-apis: []
+- Spatial Audio
+- Audio
+- Voice
+- WebRTC
+- SDK
+- Real-Time Communication
+- Gaming
+apis:
+- name: High Fidelity Spatial Audio API
+  description: >-
+    Client SDK and hosted spatial audio server for embedding real-time positional
+    voice in web and native apps. Auth is a connection JWT signed with the
+    developer's App Secret. The hosted server has been discontinued; the SDK is
+    open source (MIT).
+  humanURL: https://www.highfidelity.com/api/guides
+  baseURL: https://api.highfidelity.com
+  tags:
+  - Spatial Audio
+  - Voice
+  - WebRTC
+  properties:
+  - type: SourceCode
+    url: https://github.com/highfidelity/hifi-spatial-audio-js
+  - type: GettingStarted
+    url: https://www.highfidelity.com/api/guides
+  - type: Packages
+    url: packages/high-fidelity-packages.yml
+  - type: Authentication
+    url: authentication/high-fidelity-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Packages
+  url: packages/high-fidelity-packages.yml
+- type: SDKs
+  url: packages/high-fidelity-packages.yml
+- type: Authentication
+  url: authentication/high-fidelity-authentication.yml
+- type: Lifecycle
+  url: lifecycle/high-fidelity-lifecycle.yml
+- type: ChangeLog
+  url: changelog/high-fidelity-changelog.yml
+- type: DomainSecurity
+  url: security/high-fidelity-domain-security.yml
+- type: LLMsTxt
+  url: llms/high-fidelity-llms.txt
+- type: GettingStarted
+  url: https://www.highfidelity.com/api/guides
+- type: GitHubOrganization
+  url: https://github.com/highfidelity
+- type: Blog
+  url: https://www.highfidelity.com/blog
+- type: Support
+  url: https://www.highfidelity.com/contact
+- type: Pricing
+  url: https://www.highfidelity.com/pricing
+- type: TermsOfService
+  url: https://www.highfidelity.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.highfidelity.com/privacy
 - type: Website
-  url: http://highfidelity.com
+  url: https://www.highfidelity.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

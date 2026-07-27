@@ -1,0 +1,50 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/highfidelity/hifi-spatial-audio-js/releases
+component: hifi-spatial-audio (Spatial Audio Client Library)
+scheme: semver
+current_version: 2.1.1
+notes: >-
+  Recent window from the GitHub releases page for the Spatial Audio Client
+  Library. This is the last-published release history; the library has not seen
+  a new release since v2.1.1 (2021-10-14).
+entries:
+  - version: 2.1.1
+    date: '2021-10-14'
+    breaking: false
+    highlights:
+      - Event name and Client SDK version now included in diagnostics reporting.
+      - Fix to UUID generation for automated tests.
+      - Fix for localhost CORS error exception when sending diagnostics.
+  - version: 2.1.0
+    date: '2021-10-07'
+    breaking: false
+    highlights:
+      - Accepted values for userAttenuation, userRolloff and volumeThreshold made more permissive (NaN falls back to zone/space default).
+      - Bug fix to Quaternion.getAxis().
+      - Docs for setOtherUserGainsForThisConnection and OnMuteChangedCallback.
+  - version: 2.0.0
+    date: '2021-09-09'
+    breaking: true
+    highlights:
+      - Client orientation must now use Quaternions; native Euler-angle send/receive removed.
+      - Sample applications updated to the new orientation format.
+  - version: 1.5.0
+    date: '2021-08-26'
+    breaking: false
+    highlights:
+      - Kick and session timeout now fully disconnect the client even when reconnect is enabled.
+      - Setting volumeThreshold to null defaults to the space volumeThreshold.
+      - Fixed bug where client started at 0,0,0 despite initial position data.
+  - version: 1.4.1
+    date: '2021-08-06'
+    breaking: false
+    highlights:
+      - Fix to diagnostics reporting when the user closes their tab or browser.
+  - version: 1.4.0
+    date: '2021-07-14'
+    breaking: true
+    highlights:
+      - New connection states (transition states Connecting/Disconnecting) may affect reconnect handling.
+      - Failed connections now always transition to Disconnected.
+      - Optional automatic reconnect of dropped sessions / retry of failed attempts (default off).

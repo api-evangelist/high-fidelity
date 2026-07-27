@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/package/hifi-spatial-audio
+packages:
+  - language: javascript
+    registry: npm
+    name: hifi-spatial-audio
+    url: https://www.npmjs.com/package/hifi-spatial-audio
+    install: npm i hifi-spatial-audio
+    version: 2.1.1
+    license: MIT
+    repository: https://github.com/highfidelity/hifi-spatial-audio-js
+    description: >-
+      High Fidelity Spatial Audio Client Library (TypeScript/JavaScript) for
+      integrating High Fidelity spatial audio into Node.js and web projects.
+    official: true
+  - language: javascript
+    registry: cdn
+    name: HighFidelityAudio (browser build)
+    url: https://hifi-spatial-audio-api.s3-us-west-2.amazonaws.com/releases/latest/HighFidelityAudio-latest.js
+    install: '<script src="https://hifi-spatial-audio-api.s3-us-west-2.amazonaws.com/releases/latest/HighFidelityAudio-latest.js"></script>'
+    description: Plain-web-JavaScript prebuilt browser bundle of the Spatial Audio Client Library.
+    official: true
+notes: >-
+  hifi-spatial-audio is the single first-party client SDK. The GitHub source is
+  highfidelity/hifi-spatial-audio-js (MIT). The hosted Spatial Audio API service
+  that these clients connected to was discontinued (final SDK release v2.1.1,
+  2021-10-14); the packages remain published on npm and GitHub.

@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/highfidelity/hifi-spatial-audio-js/releases
+versioning:
+  scheme: semver
+  current: 2.1.1
+  docs: https://github.com/highfidelity/hifi-spatial-audio-js/releases
+deprecation:
+  policy_url: null
+  sunset_header: false
+sla:
+  url: null
+status_page: null
+service_state: discontinued
+service_state_evidence: >-
+  The hosted Spatial Audio API endpoints (api.highfidelity.com,
+  docs.highfidelity.com, account.highfidelity.com) no longer resolve/serve as of
+  this probe (2026-07-19), and the client SDK has had no release since v2.1.1
+  (2021-10-14). The company's active product is now Quad
+  (https://www.highfidelity.com/quad). The open-source SDK remains published on
+  npm and GitHub.
+deprecated_operations: []
