@@ -20,6 +20,19 @@ x-backed-by:
 x-tier: stub
 x-tier-reason: portfolio-lead
 x-lifecycle: hosted-api-discontinued
+deliveryModel:
+  model: open-core
+  license: MIT
+  open_source: true
+  commercial: true
+  callable_host: false
+  label: Open core · an OSS project plus a commercial hosted product
+  confidence: high
+  source:
+  - license
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
